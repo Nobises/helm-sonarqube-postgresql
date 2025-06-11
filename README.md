@@ -21,7 +21,7 @@ kubectl get pods
 
 5. Пробросить порт/Forward port
 
-kubectl port-forward sonar-sonarqube-nobises-<numbers> 9000:80
+kubectl port-forward sonar-sonarqube-nobises-"numbers" 9000:80
 
 6. Открыть SonarQube в браузере/Open SonarQube in browser
 
