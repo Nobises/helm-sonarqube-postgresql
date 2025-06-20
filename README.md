@@ -2,28 +2,24 @@
  
 ## Установка/Installing
 
-1. Клонируйте репозиторий/Clone repository
+1. Добавьте репозиторий/Add repository
 
-git clone https://github.com/Nobises/helm-sonarqube-postgresql
-cd sonarqube-nobises
+helm repo add sonarqube-nobises https://nobises.github.io/helm-sonarqube-postgresql
+helm repo update
 
-2. Установите зависимости/Install dependencies
+2. Установите релиз/Install release
 
-helm dependency update
+helm install sonar sonarqube-nobises/sonarqube-nobises
 
-3. Установите Helm релиз/Install Helm release
-
-helm upgrade --install sonar . -f values.yaml
-
-4. Проверьте поды/Check pods
+3. Проверьте поды/Check pods
 
 kubectl get pods
 
-5. Пробросить порт/Forward port
+4. Пробросить порт/Forward port
 
 kubectl port-forward sonar-sonarqube-nobises-"numbers" 9000:80
 
-6. Открыть SonarQube в браузере/Open SonarQube in browser
+5. Открыть SonarQube в браузере/Open SonarQube in browser
 
 http://localhost:9000
 
