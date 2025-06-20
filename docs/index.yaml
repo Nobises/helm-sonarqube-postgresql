@@ -3,16 +3,16 @@ entries:
   sonarqube-nobises:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-06-20T17:41:06.064069638Z"
+    created: "2025-06-20T17:48:27.117248638Z"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 12.x.x
     description: A Helm chart for Kubernetes
-    digest: 6b6c7d5979cb785fda46c91a823359375e1f239213fc96991c35c34c72706267
+    digest: e944d70104e21d87af2290f4e85a56dd5ef758afbc07643858f74feab262eebc
     name: sonarqube-nobises
     type: application
     urls:
     - https://nobises.github.io/helm-sonarqube-postgresql/sonarqube-nobises-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-20T17:41:06.054277948Z"
+generated: "2025-06-20T17:48:27.108870289Z"
